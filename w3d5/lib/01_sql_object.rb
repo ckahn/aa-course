@@ -90,6 +90,7 @@ class SQLObject
     # byebug
     col_names = self.class.columns.join(',')
     question_marks = (['?'] * self.class.columns.size).join(',')
+
     DBConnection.execute(<<-SQL, *attribute_values)
       INSERT INTO
         #{self.class.table_name} (#{col_names})
@@ -100,11 +101,22 @@ class SQLObject
   end
 
   def update
-    # ...
+    col_values = self.class.columns.map do |attr_name|
+      "#{attr_name} = ?"
+    end.join(',')
+
+    DBConnection.execute(<<-SQL, *attribute_values, attributes[:id])
+      UPDATE
+        #{self.class.table_name}
+      SET
+        #{col_values}
+      WHERE
+        id = ?
+    SQL
   end
 
   def save
-    # ...
+    attributes[:id].nil? ? self.insert : self.update
   end
 end
 
