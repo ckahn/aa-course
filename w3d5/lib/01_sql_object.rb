@@ -9,7 +9,9 @@ class SQLObject
       SELECT
         *
       FROM
-        "#{table_name}"
+        #{table_name}
+      LIMIT
+        0
     SQL
     columns.first.map(&:to_sym)
   end
@@ -35,11 +37,21 @@ class SQLObject
   end
 
   def self.all
-    # ...
+    results = DBConnection.execute(<<-SQL)
+      SELECT
+        #{table_name}.*
+      FROM
+        #{table_name}
+    SQL
+    parse_all(results)
   end
 
   def self.parse_all(results)
-    # ...
+    objects = []
+    results.each do |attributes|
+      objects << self.new(attributes)
+    end
+    objects
   end
 
   def self.find(id)
@@ -47,7 +59,12 @@ class SQLObject
   end
 
   def initialize(params = {})
-    # ...
+    params.each do |attr_name, value|
+      unless self.class.columns.include?(attr_name.to_sym)
+        raise "unknown attribute '#{attr_name}'" 
+      end
+      self.send("#{attr_name}=", value)
+    end
   end
 
   def attributes
