@@ -55,7 +55,17 @@ class SQLObject
   end
 
   def self.find(id)
-    # ...
+    rows = DBConnection.execute(<<-SQL, id)
+      SELECT
+        #{table_name}.*
+      FROM
+        #{table_name}
+      WHERE
+        id = ?
+    SQL
+    attributes = rows.first
+    return nil if attributes.nil?
+    self.new(attributes)
   end
 
   def initialize(params = {})
@@ -86,4 +96,9 @@ class SQLObject
   def save
     # ...
   end
+end
+
+class Human < SQLObject
+  self.table_name = "humans"
+  finalize!
 end
