@@ -14,7 +14,7 @@ class AssocOptions
   end
 
   def table_name
-    model_class.table_name 
+    model_class.table_name
   end
 end
 
@@ -53,19 +53,18 @@ end
 module Associatable
   # Phase IIIb
   def belongs_to(name, options = {})
-    options = BelongsToOptions(name, options)
+    options = BelongsToOptions.new(name, options)
     define_method(name) do
-      foreign_key = options.send(:foreign_key)
-      model_class = options.send(:model_class)
-      primary_key = options.send(:primary_key)
-      DBConnection.execute(<<-SQL, foreign_key)
+      fk = options.foreign_key
+      rows = DBConnection.execute(<<-SQL)
         SELECT
-          *
+          #{options.table_name}.*
         FROM
-          #{table_name}
+          #{options.table_name}
         WHERE
-          id = ?
+          id = #{options.primary_key}
       SQL
+      options.model_class.new(rows.first) # self.class.new(rows.first)
     end
   end
 
