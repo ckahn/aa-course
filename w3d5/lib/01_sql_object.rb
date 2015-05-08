@@ -1,4 +1,3 @@
-# require 'byebug'
 require_relative 'db_connection'
 require 'active_support/inflector'
 # NB: the attr_accessor we wrote in phase 0 is NOT used in the rest
@@ -72,7 +71,7 @@ class SQLObject
   def initialize(params = {})
     params.each do |attr_name, value|
       unless self.class.columns.include?(attr_name.to_sym)
-        raise "unknown attribute '#{attr_name}'" 
+        raise "unknown attribute '#{attr_name}'"
       end
       self.send("#{attr_name}=", value)
     end
@@ -87,7 +86,6 @@ class SQLObject
   end
 
   def insert
-    # byebug
     col_names = self.class.columns.join(',')
     question_marks = (['?'] * self.class.columns.size).join(',')
 
@@ -118,9 +116,4 @@ class SQLObject
   def save
     attributes[:id].nil? ? self.insert : self.update
   end
-end
-
-class Human < SQLObject
-  self.table_name = "humans"
-  finalize!
 end
