@@ -37,7 +37,7 @@ end
 class HasManyOptions < AssocOptions
   def initialize(name, self_class_name, options = {})
     defaults = {
-      foreign_key: "#{self_class_name.underscore}_id".to_sym,
+      foreign_key: "#{self_class_name.to_s.underscore}_id".to_sym,
       primary_key: :id,
       class_name: "#{name.to_s.singularize.camelcase}"
     }
@@ -55,21 +55,32 @@ module Associatable
   def belongs_to(name, options = {})
     options = BelongsToOptions.new(name, options)
     define_method(name) do
-      fk = options.foreign_key
-      rows = DBConnection.execute(<<-SQL)
+      rows = DBConnection.execute(<<-SQL, self.attributes[:id])
         SELECT
           #{options.table_name}.*
         FROM
           #{options.table_name}
         WHERE
-          id = #{options.primary_key}
+          id = ?
       SQL
-      options.model_class.new(rows.first) # self.class.new(rows.first)
+      return nil if rows.empty?
+      options.model_class.new(rows.first)
     end
   end
 
   def has_many(name, options = {})
-    # ...
+    options = HasManyOptions.new(name, self.class, options)
+    define_method(name) do
+      rows = DBConnection.execute(<<-SQL, self.attributes[:id])
+        SELECT
+          #{options.table_name}.*
+        FROM
+          #{options.table_name}
+        WHERE
+          #{options.foreign_key} = ?
+      SQL
+      rows.map { |row| options.model_class.new(row) }
+    end
   end
 
   def assoc_options
