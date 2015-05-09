@@ -1,5 +1,6 @@
 require_relative '02_searchable'
 require 'active_support/inflector'
+# require 'byebug'
 
 # Phase IIIa
 class AssocOptions
@@ -36,6 +37,7 @@ end
 
 class HasManyOptions < AssocOptions
   def initialize(name, self_class_name, options = {})
+    # byebug
     defaults = {
       foreign_key: "#{self_class_name.to_s.underscore}_id".to_sym,
       primary_key: :id,
@@ -69,7 +71,7 @@ module Associatable
   end
 
   def has_many(name, options = {})
-    options = HasManyOptions.new(name, self.class, options)
+    options = HasManyOptions.new(name, self, options)
     define_method(name) do
       rows = DBConnection.execute(<<-SQL, self.attributes[:id])
         SELECT
