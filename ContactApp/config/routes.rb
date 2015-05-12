@@ -3,6 +3,7 @@ Rails.application.routes.draw do
     resources :contacts, only: [:index]
     resources :comments, only: [:create, :index]
     resources :authored_comments, only: [:index]
+    get 'liked', :on => :member
   end
 
   resources :contacts, only: [:create, :show, :destroy, :update] do
