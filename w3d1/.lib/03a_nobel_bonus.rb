@@ -19,14 +19,15 @@ def physics_no_chemistry
     FROM
       nobels
     WHERE
-      subject = 'Physics' AND
+      subject = 'Physics'
+    AND
       yr NOT IN (
-        SELECT
+        SELECT DISTINCT
           yr
         FROM
           nobels
         WHERE
           subject = 'Chemistry'
-      )
+        );
   SQL
 end

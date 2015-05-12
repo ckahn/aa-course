@@ -29,7 +29,7 @@ def highest_gdp
           countries
         WHERE
           continent = 'Europe'
-      )
+      );
   SQL
 end
 
@@ -38,18 +38,18 @@ def largest_in_continent
   # name, and area.
   execute(<<-SQL)
     SELECT
-      c1.continent, c1.name, c1.area
+      continent, name, area
     FROM
-      countries c1
+      countries
     WHERE
-      area = (
+      area IN (
         SELECT
           MAX(area)
         FROM
-          countries c2
-        WHERE
-          c2.continent = c1.continent
-      )
+          countries
+        GROUP BY
+          continent
+      );
   SQL
 end
 
@@ -58,18 +58,12 @@ def large_neighbors
   # neighbors (in the same continent). Give the countries and continents.
   execute(<<-SQL)
     SELECT
-      c1.name, c1.continent
+      name, continent
     FROM
-      countries c1
+      countries
     WHERE
-      c1.population > (
-        SELECT
-          MAX(c2.population)
-        FROM
-          countries c2
-        WHERE
-          c2.continent = c1.continent AND
-          c2.name != c1.name
-      ) * 3
+      population > 3 * (
+        
+      )
   SQL
 end

@@ -24,6 +24,12 @@ require_relative './sqlzoo.rb'
 
 def example_query
   execute(<<-SQL)
+    SELECT
+      *
+    FROM
+      movies
+    WHERE
+      title = 'Doctor No'
   SQL
 end
 
@@ -35,7 +41,7 @@ def films_from_sixty_two
     FROM
       movies
     WHERE
-      yr = 1962
+      yr = 1962;
   SQL
 end
 
@@ -47,7 +53,7 @@ def year_of_kane
     FROM
       movies
     WHERE
-      title = 'Citizen Kane'
+      title = 'Citizen Kane';
   SQL
 end
 
@@ -58,7 +64,7 @@ def trek_films
   execute(<<-SQL)
     SELECT
       id, title, yr
-    FROM  
+    FROM
       movies
     WHERE
       title LIKE '%Star Trek%'
@@ -75,7 +81,7 @@ def films_by_id
     FROM
       movies
     WHERE
-      id IN (1119, 1595, 1768)
+      id IN (1119, 1595, 1768);
   SQL
 end
 
@@ -84,10 +90,10 @@ def glenn_close_id
   execute(<<-SQL)
     SELECT
       id
-    FROM 
+    FROM
       actors
     WHERE
-      name = 'Glenn Close'
+      name = 'Glenn Close';
   SQL
 end
 
@@ -99,7 +105,7 @@ def casablanca_id
     FROM
       movies
     WHERE
-      title = 'Casablanca'
+      title = 'Casablanca';
   SQL
 end
 
@@ -110,38 +116,28 @@ def casablanca_cast
     SELECT
       actors.name
     FROM
-      castings
-    JOIN
-      actors ON castings.actor_id = actors.id
+      actors
+    INNER JOIN
+      castings ON actors.id = castings.actor_id
+    INNER JOIN
+      movies ON castings.movie_id = movies.id
     WHERE
-      castings.movie_id = (
-        SELECT
-          id
-        FROM
-          movies
-        WHERE
-          movies.title = 'Casablanca'
-      )
+      movies.title = 'Casablanca';
   SQL
 end
 
 def alien_cast
   # Obtain the cast list for the film 'Alien'
   execute(<<-SQL)
-    SELECT
-      actors.name
-    FROM
-      castings
-    JOIN
-      actors ON castings.actor_id = actors.id
-    WHERE
-      castings.movie_id = (
-        SELECT
-          id
-        FROM
-          movies
-        WHERE
-          movies.title = 'Alien'
-      )
+  SELECT
+    actors.name
+  FROM
+    actors
+  INNER JOIN
+    castings ON actors.id = castings.actor_id
+  INNER JOIN
+    movies ON castings.movie_id = movies.id
+  WHERE
+    movies.title = 'Alien';
   SQL
 end
