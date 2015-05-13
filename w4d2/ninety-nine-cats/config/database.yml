@@ -13,7 +13,7 @@ development:
   <<: *default
   database: ninety-nine-cats_development
   host: localhost
-  username: appacademy
+  username: chris
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
