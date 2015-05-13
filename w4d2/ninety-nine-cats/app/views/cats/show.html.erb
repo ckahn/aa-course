@@ -1,0 +1,46 @@
+<% unless flash[:notice].nil? %>
+  <p><%= flash[:notice] %></p>
+<% end %>
+
+<table style="border-collapse: collapse; font-family: Sans-serif;" CELLPADDING=2>
+  <tr>
+    <th>Attribute</th>
+    <th>Value</th>
+  </tr>
+  <% @cat.attributes.each do |name, value| %>
+  <tr>
+    <td style="border: 2px solid black"><%= name %></td>
+    <td style="border: 2px solid black"><%= value %></td>
+  </tr>
+  <% end %>
+</table>
+
+<p>
+
+<% unless @requests.empty? %>
+<table style="border-collapse: collapse; font-family: Sans-serif;" CELLPADDING=2>
+  <tr>
+    <th>Start Date</th>
+    <th>End Date</th>
+    <th colspan=2>Status</th>
+  </tr>
+  <% @requests.each do |request| %>
+  <tr>
+    <td style="border: 2px solid black"><%= request.start_date %></td>
+    <td style="border: 2px solid black"><%= request.end_date %></td>
+  <% if request.status == "PENDING" %>
+      <td style="border: 2px solid black">
+        <%= button_to "Approve", approve_cat_rental_request_url(request), :class => "button", :method => :patch %>
+      </td>
+      <td style="border: 2px solid black">
+        <%= button_to "Deny", deny_cat_rental_request_url(request), :class => "button", :method => :patch %>
+      </td>
+  <% elsif request.status == "APPROVED" %>
+    <td style="border: 2px solid black">APPROVED</td><td style="border: 2px solid black"></td>
+  <% else %>
+    <td style="border: 2px solid black"></td><td style="border: 2px solid black">DENIED</td>
+  <% end %>
+  </tr>
+  <% end %>
+</table>
+<% end %>

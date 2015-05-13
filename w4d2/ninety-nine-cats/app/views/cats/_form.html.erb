@@ -1,0 +1,56 @@
+<% unless flash[:errors].nil? || flash[:errors].empty?  %>
+<p><%= flash[:errors] %></p>
+<% end %>
+
+<% if @cat.persisted? %>
+
+<form action="<%= cat_url(@cat) %>" method="POST">
+  <input type="hidden" name="_method" value="PATCH">
+
+<% else %>
+
+<form action="<%= cats_url %>" method="POST">
+
+<% end %>
+
+  <label for="cat-name">Name</label>
+  <input type="text" name="cat[name]" id="cat-name" value="<%= @cat.name %>"></input>
+  <br>
+
+  <label for="cat-color">Color</label>
+  <select name="cat[color]" id="cat-color">
+    <option disabled selected> -- Select a Color -- </option>
+    <option value="brown" <%= "selected" if @cat.color == "brown" %> >Brown</option>
+    <option value="red" <%= "selected" if @cat.color == "red" %> >Red</option>
+    <option value="white" <%= "selected" if @cat.color == "white" %> >White</option>
+    <option value="grey" <%= "selected" if @cat.color == "grey" %> >Grey</option>
+  </select>
+  <br>
+
+  <label for="cat-sex-male">Male</label>
+  <input type="radio" name="cat[sex]" id="cat-sex-male" value="M"
+    <%= "checked='checked'" if @cat.sex == "M" %> >
+  <label for="cat-sex-female">Female</label>
+  <input type="radio" name="cat[sex]" id="cat-sex-female" value="F"
+    <%= "checked='checked'" if @cat.sex == "F" %> >
+  <br>
+
+  <label for="cat-birth-date">Birth Date</label>
+  <input type="date" name="cat[birth_date]" id="cat-birth-date"
+    value="<%= @cat.birth_date %>" >
+  <br>
+
+  <label for="cat-description">Description</label>
+  <textarea name="cat[description]" id="cat-description"><%= @cat.description %></textarea>
+  <br>
+
+  <% if @cat.persisted? %>
+
+  <input type="submit" value="Edit cat">
+
+  <% else %>
+
+  <input type="submit" value="Create cat">
+
+  <% end %>
+</form>
