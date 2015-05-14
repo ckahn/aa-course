@@ -1,0 +1,9 @@
+<% unless flash[:errors].empty? %>
+  <ul>
+    <% flash[:errors].each do |error| %>
+      <li><%= error %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render "layouts/form", user: @user, action: users_url, label: "Create Account" %>
