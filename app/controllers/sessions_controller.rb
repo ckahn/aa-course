@@ -10,7 +10,8 @@ class SessionsController < ApplicationController
       session[:session_token] = @user.session_token
       redirect_to user_url(@user)
     else
-      render :text, error
+      flash[:notice] = "Invalid login"
+      redirect_to new_session_url
     end
   end
 
