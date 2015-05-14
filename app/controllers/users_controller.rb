@@ -4,15 +4,17 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.new(params[:user][:email], params[:user][:password])
+    @user = User.new(email: params[:user][:email], password: params[:user][:password])
     if @user.save
-      render :text, "saved"
+      log_in_user!(@user)
+      redirect_to user_url(@user)
     else
-      render :text, "error"
+      render :new
     end
   end
 
   def show
+    @user = User.find(params[:id])
   end
 
   def delete

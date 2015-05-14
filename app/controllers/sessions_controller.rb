@@ -1,5 +1,6 @@
-class SessionController < ApplicationController
+class SessionsController < ApplicationController
   def new
+    @user = User.new
   end
 
   def create
@@ -13,6 +14,8 @@ class SessionController < ApplicationController
     end
   end
 
-  def delete
+  def destroy
+    session[:session_token] = nil
+    redirect_to new_session_url
   end
 end
