@@ -19311,3 +19311,1170 @@ Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-13 19:29:3
 
 
 Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-13 19:29:38 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-13 21:57:05 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/cats" for 127.0.0.1 at 2015-05-13 21:57:05 -0700
+Processing by CatsController#index as HTML
+  [1m[35mCat Load (0.9ms)[0m  SELECT "cats".* FROM "cats"
+  Rendered cats/index.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 128ms (Views: 109.5ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/assets/cat_rental_requests.css?body=1" for 127.0.0.1 at 2015-05-13 21:57:06 -0700
+
+
+Started GET "/assets/cats.css?body=1" for 127.0.0.1 at 2015-05-13 21:57:06 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-05-13 21:57:06 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-13 21:57:06 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-05-13 21:57:06 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-13 21:57:06 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-13 21:57:06 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-13 21:57:06 -0700
+
+
+Started GET "/assets/cat_rental_requests.js?body=1" for 127.0.0.1 at 2015-05-13 21:57:06 -0700
+
+
+Started GET "/assets/cats.js?body=1" for 127.0.0.1 at 2015-05-13 21:57:06 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-05-13 21:57:06 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-05-13 21:57:06 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-13 21:57:06 -0700
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-05-13 21:57:14 -0700
+Processing by SessionsController#new as HTML
+  Rendered layouts/_form.html.erb (0.8ms)
+  Rendered sessions/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 86ms (Views: 69.9ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-13 21:57:14 -0700
+
+
+Started GET "/assets/cat_rental_requests.js?body=1" for 127.0.0.1 at 2015-05-13 21:57:14 -0700
+
+
+Started GET "/assets/cats.js?body=1" for 127.0.0.1 at 2015-05-13 21:57:14 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-05-13 21:57:14 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-05-13 21:57:14 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-13 21:57:14 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-13 21:57:14 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-13 21:57:14 -0700
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-05-13 21:57:25 -0700
+Processing by SessionsController#new as HTML
+  Rendered layouts/_form.html.erb (0.8ms)
+  Rendered sessions/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 72ms (Views: 70.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-13 21:57:25 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-13 21:57:25 -0700
+
+
+Started GET "/assets/cat_rental_requests.js?body=1" for 127.0.0.1 at 2015-05-13 21:57:25 -0700
+
+
+Started GET "/assets/cats.js?body=1" for 127.0.0.1 at 2015-05-13 21:57:25 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-05-13 21:57:25 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-05-13 21:57:25 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-13 21:57:25 -0700
+
+
+Started GET "/assets/cat_rental_requests.css?body=1" for 127.0.0.1 at 2015-05-13 21:57:25 -0700
+
+
+Started GET "/assets/cats.css?body=1" for 127.0.0.1 at 2015-05-13 21:57:25 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-05-13 21:57:25 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-05-13 21:57:25 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-13 21:57:25 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-13 21:57:25 -0700
+
+
+Started POST "/session" for 127.0.0.1 at 2015-05-13 21:57:37 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"PbiDy1eeNSyVJMychVOCIJIxPqyI8jGIbkDupTvEBsc=", "user"=>{"user_name"=>"chris", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."user_name" = 'chris' LIMIT 1[0m
+  Rendered layouts/_form.html.erb (0.1ms)
+  Rendered sessions/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 87ms (Views: 71.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-13 21:57:37 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-13 21:57:37 -0700
+
+
+Started GET "/assets/cat_rental_requests.js?body=1" for 127.0.0.1 at 2015-05-13 21:57:37 -0700
+
+
+Started GET "/assets/cats.js?body=1" for 127.0.0.1 at 2015-05-13 21:57:37 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-05-13 21:57:37 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-05-13 21:57:37 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-13 21:57:37 -0700
+
+
+Started GET "/assets/cat_rental_requests.css?body=1" for 127.0.0.1 at 2015-05-13 21:57:37 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-13 21:57:37 -0700
+
+
+Started GET "/assets/cats.css?body=1" for 127.0.0.1 at 2015-05-13 21:57:37 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-05-13 21:57:37 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-13 21:57:37 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-05-13 21:57:37 -0700
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-05-13 21:59:00 -0700
+Processing by SessionsController#new as HTML
+  Rendered layouts/_form.html.erb (0.1ms)
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 99ms (Views: 97.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-13 21:59:00 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-13 21:59:00 -0700
+
+
+Started GET "/assets/cat_rental_requests.js?body=1" for 127.0.0.1 at 2015-05-13 21:59:00 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-13 21:59:00 -0700
+
+
+Started GET "/assets/cats.js?body=1" for 127.0.0.1 at 2015-05-13 21:59:00 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-05-13 21:59:00 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-05-13 21:59:00 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-13 21:59:00 -0700
+
+
+Started GET "/assets/cat_rental_requests.css?body=1" for 127.0.0.1 at 2015-05-13 21:59:00 -0700
+
+
+Started GET "/assets/cats.css?body=1" for 127.0.0.1 at 2015-05-13 21:59:00 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-05-13 21:59:00 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-13 21:59:00 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-05-13 21:59:00 -0700
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-05-13 21:59:27 -0700
+Processing by SessionsController#new as HTML
+  Rendered layouts/_form.html.erb (0.1ms)
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 76ms (Views: 75.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-13 21:59:27 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-13 21:59:27 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-13 21:59:27 -0700
+
+
+Started GET "/assets/cats.js?body=1" for 127.0.0.1 at 2015-05-13 21:59:27 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-05-13 21:59:27 -0700
+
+
+Started GET "/assets/cat_rental_requests.js?body=1" for 127.0.0.1 at 2015-05-13 21:59:27 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-13 21:59:27 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-05-13 21:59:27 -0700
+
+
+Started GET "/assets/cat_rental_requests.css?body=1" for 127.0.0.1 at 2015-05-13 21:59:27 -0700
+
+
+Started GET "/assets/cats.css?body=1" for 127.0.0.1 at 2015-05-13 21:59:27 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-05-13 21:59:27 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-05-13 21:59:27 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-13 21:59:27 -0700
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-05-13 21:59:30 -0700
+Processing by SessionsController#new as HTML
+  Rendered layouts/_form.html.erb (0.1ms)
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 71ms (Views: 70.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-05-13 21:59:30 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-05-13 21:59:30 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-13 21:59:30 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-13 21:59:30 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-13 21:59:30 -0700
+
+
+Started GET "/assets/cat_rental_requests.js?body=1" for 127.0.0.1 at 2015-05-13 21:59:30 -0700
+
+
+Started GET "/assets/cats.js?body=1" for 127.0.0.1 at 2015-05-13 21:59:30 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-05-13 21:59:30 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-05-13 21:59:30 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-13 21:59:30 -0700
+
+
+Started GET "/assets/cat_rental_requests.css?body=1" for 127.0.0.1 at 2015-05-13 21:59:30 -0700
+
+
+Started GET "/assets/cats.css?body=1" for 127.0.0.1 at 2015-05-13 21:59:30 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-13 21:59:30 -0700
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-05-13 21:59:42 -0700
+Processing by SessionsController#new as HTML
+  Rendered layouts/_form.html.erb (0.1ms)
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 104ms (Views: 103.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-05-13 21:59:42 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-05-13 21:59:42 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-13 21:59:42 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-13 21:59:42 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-13 21:59:42 -0700
+
+
+Started GET "/assets/cat_rental_requests.js?body=1" for 127.0.0.1 at 2015-05-13 21:59:42 -0700
+
+
+Started GET "/assets/cats.js?body=1" for 127.0.0.1 at 2015-05-13 21:59:42 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-05-13 21:59:42 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-05-13 21:59:42 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-13 21:59:42 -0700
+
+
+Started GET "/assets/cat_rental_requests.css?body=1" for 127.0.0.1 at 2015-05-13 21:59:42 -0700
+
+
+Started GET "/assets/cats.css?body=1" for 127.0.0.1 at 2015-05-13 21:59:42 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-13 21:59:42 -0700
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-05-13 22:00:34 -0700
+Processing by SessionsController#new as HTML
+  Rendered layouts/_form.html.erb (0.2ms)
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 81ms (Views: 79.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-13 22:00:34 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-13 22:00:34 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-13 22:00:34 -0700
+
+
+Started GET "/assets/cat_rental_requests.js?body=1" for 127.0.0.1 at 2015-05-13 22:00:34 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-05-13 22:00:34 -0700
+
+
+Started GET "/assets/cats.js?body=1" for 127.0.0.1 at 2015-05-13 22:00:34 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-05-13 22:00:34 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-13 22:00:34 -0700
+
+
+Started GET "/assets/cat_rental_requests.css?body=1" for 127.0.0.1 at 2015-05-13 22:00:35 -0700
+
+
+Started GET "/assets/cats.css?body=1" for 127.0.0.1 at 2015-05-13 22:00:35 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-05-13 22:00:35 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-05-13 22:00:35 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-13 22:00:35 -0700
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-05-13 22:00:36 -0700
+Processing by SessionsController#new as HTML
+  Rendered layouts/_form.html.erb (0.2ms)
+  Rendered sessions/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 75ms (Views: 73.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-13 22:00:36 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-13 22:00:36 -0700
+
+
+Started GET "/assets/cat_rental_requests.js?body=1" for 127.0.0.1 at 2015-05-13 22:00:36 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-13 22:00:36 -0700
+
+
+Started GET "/assets/cats.js?body=1" for 127.0.0.1 at 2015-05-13 22:00:37 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-05-13 22:00:37 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-13 22:00:37 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-05-13 22:00:37 -0700
+
+
+Started GET "/assets/cats.css?body=1" for 127.0.0.1 at 2015-05-13 22:00:37 -0700
+
+
+Started GET "/assets/cat_rental_requests.css?body=1" for 127.0.0.1 at 2015-05-13 22:00:37 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-05-13 22:00:37 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-05-13 22:00:37 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-13 22:00:37 -0700
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-05-13 22:00:48 -0700
+Processing by SessionsController#new as HTML
+  Rendered layouts/_form.html.erb (0.2ms)
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 85ms (Views: 83.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-13 22:00:49 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-13 22:00:49 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-13 22:00:49 -0700
+
+
+Started GET "/assets/cat_rental_requests.js?body=1" for 127.0.0.1 at 2015-05-13 22:00:49 -0700
+
+
+Started GET "/assets/cats.js?body=1" for 127.0.0.1 at 2015-05-13 22:00:49 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-05-13 22:00:49 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-05-13 22:00:49 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-13 22:00:49 -0700
+
+
+Started GET "/assets/cats.css?body=1" for 127.0.0.1 at 2015-05-13 22:00:49 -0700
+
+
+Started GET "/assets/cat_rental_requests.css?body=1" for 127.0.0.1 at 2015-05-13 22:00:49 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-05-13 22:00:49 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-05-13 22:00:49 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-13 22:00:49 -0700
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-05-13 22:01:44 -0700
+Processing by SessionsController#new as HTML
+  Rendered layouts/_form.html.erb (0.1ms)
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 90ms (Views: 88.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-13 22:01:45 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-13 22:01:45 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-13 22:01:45 -0700
+
+
+Started GET "/assets/cat_rental_requests.js?body=1" for 127.0.0.1 at 2015-05-13 22:01:45 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-05-13 22:01:45 -0700
+
+
+Started GET "/assets/cats.js?body=1" for 127.0.0.1 at 2015-05-13 22:01:45 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-05-13 22:01:45 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-13 22:01:45 -0700
+
+
+Started GET "/assets/cat_rental_requests.css?body=1" for 127.0.0.1 at 2015-05-13 22:01:45 -0700
+
+
+Started GET "/assets/cats.css?body=1" for 127.0.0.1 at 2015-05-13 22:01:45 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-05-13 22:01:45 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-05-13 22:01:45 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-13 22:01:45 -0700
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-05-13 22:02:59 -0700
+Processing by SessionsController#new as HTML
+  Rendered layouts/_form.html.erb (0.6ms)
+  Rendered sessions/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 76ms (Views: 75.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-05-13 22:02:59 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-05-13 22:02:59 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-13 22:02:59 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-13 22:02:59 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-13 22:02:59 -0700
+
+
+Started GET "/assets/cat_rental_requests.js?body=1" for 127.0.0.1 at 2015-05-13 22:02:59 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-05-13 22:02:59 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-05-13 22:02:59 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-13 22:02:59 -0700
+
+
+Started GET "/assets/cats.js?body=1" for 127.0.0.1 at 2015-05-13 22:02:59 -0700
+
+
+Started GET "/assets/cat_rental_requests.css?body=1" for 127.0.0.1 at 2015-05-13 22:02:59 -0700
+
+
+Started GET "/assets/cats.css?body=1" for 127.0.0.1 at 2015-05-13 22:02:59 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-13 22:02:59 -0700
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-05-13 22:06:22 -0700
+Processing by SessionsController#new as HTML
+  Rendered layouts/_form.html.erb (0.7ms)
+  Rendered sessions/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 71ms (Views: 69.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-13 22:06:22 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-13 22:06:22 -0700
+
+
+Started GET "/assets/cat_rental_requests.js?body=1" for 127.0.0.1 at 2015-05-13 22:06:22 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-05-13 22:06:22 -0700
+
+
+Started GET "/assets/cats.js?body=1" for 127.0.0.1 at 2015-05-13 22:06:22 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-13 22:06:22 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-13 22:06:22 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-05-13 22:06:22 -0700
+
+
+Started GET "/assets/cat_rental_requests.css?body=1" for 127.0.0.1 at 2015-05-13 22:06:22 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-05-13 22:06:22 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-13 22:06:22 -0700
+
+
+Started GET "/assets/cats.css?body=1" for 127.0.0.1 at 2015-05-13 22:06:22 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-05-13 22:06:22 -0700
+
+
+Started POST "/session" for 127.0.0.1 at 2015-05-13 22:06:59 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"PbiDy1eeNSyVJMychVOCIJIxPqyI8jGIbkDupTvEBsc=", "user"=>{"user_name"=>"Velina", "password"=>"[FILTERED]"}}
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."user_name" = 'Velina' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.9ms)[0m  SELECT  1 AS one FROM "users"  WHERE ("users"."user_name" = 'Velina' AND "users"."id" != 1) LIMIT 1
+  [1m[36mSQL (0.9ms)[0m  [1mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = 1[0m  [["session_token", "UwQ2Zy8wrLcUvlV_eYyHeA"], ["updated_at", "2015-05-14 05:06:59.489254"]]
+  [1m[35m (26.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/cats
+Completed 302 Found in 200ms (ActiveRecord: 29.0ms)
+
+
+Started GET "/cats" for 127.0.0.1 at 2015-05-13 22:06:59 -0700
+Processing by CatsController#index as HTML
+  [1m[36mCat Load (0.4ms)[0m  [1mSELECT "cats".* FROM "cats"[0m
+  Rendered cats/index.html.erb within layouts/application (1.5ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."session_token" = 'UwQ2Zy8wrLcUvlV_eYyHeA' LIMIT 1
+Completed 200 OK in 79ms (Views: 76.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-13 22:06:59 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-13 22:06:59 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-05-13 22:06:59 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-13 22:06:59 -0700
+
+
+Started GET "/assets/cat_rental_requests.js?body=1" for 127.0.0.1 at 2015-05-13 22:06:59 -0700
+
+
+Started GET "/assets/cats.js?body=1" for 127.0.0.1 at 2015-05-13 22:06:59 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-05-13 22:06:59 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-13 22:06:59 -0700
+
+
+Started GET "/assets/cat_rental_requests.css?body=1" for 127.0.0.1 at 2015-05-13 22:06:59 -0700
+
+
+Started GET "/assets/cats.css?body=1" for 127.0.0.1 at 2015-05-13 22:06:59 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-13 22:06:59 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-05-13 22:06:59 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-05-13 22:06:59 -0700
+
+
+Started GET "/cats/1" for 127.0.0.1 at 2015-05-13 22:07:08 -0700
+Processing by CatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCat Load (0.5ms)[0m  [1mSELECT  "cats".* FROM "cats"  WHERE "cats"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCatRentalRequest Load (0.6ms)[0m  SELECT "cat_rental_requests".* FROM "cat_rental_requests"  WHERE "cat_rental_requests"."cat_id" = $1  ORDER BY start_date  [["cat_id", 1]]
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."session_token" = 'UwQ2Zy8wrLcUvlV_eYyHeA' LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered cats/_req_tr.html.erb (8.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered cats/_req_tr.html.erb (1.4ms)
+  Rendered cats/show.html.erb within layouts/application (47.7ms)
+Completed 200 OK in 117ms (Views: 109.7ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-13 22:07:08 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-13 22:07:08 -0700
+
+
+Started GET "/assets/cat_rental_requests.js?body=1" for 127.0.0.1 at 2015-05-13 22:07:08 -0700
+
+
+Started GET "/assets/cats.js?body=1" for 127.0.0.1 at 2015-05-13 22:07:08 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-05-13 22:07:08 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-05-13 22:07:08 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-13 22:07:08 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-13 22:07:08 -0700
+
+
+Started GET "/cats/1/edit" for 127.0.0.1 at 2015-05-13 22:07:10 -0700
+Processing by CatsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCat Load (0.5ms)[0m  SELECT  "cats".* FROM "cats"  WHERE "cats"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."session_token" = 'UwQ2Zy8wrLcUvlV_eYyHeA' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "cats".* FROM "cats"  WHERE "cats"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered shared/_errors.html.erb (1.1ms)
+  Rendered cats/_form.html.erb (4.0ms)
+  Rendered cats/edit.html.erb within layouts/application (24.9ms)
+Completed 200 OK in 98ms (Views: 92.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-13 22:07:11 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-13 22:07:11 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-13 22:07:11 -0700
+
+
+Started GET "/assets/cat_rental_requests.js?body=1" for 127.0.0.1 at 2015-05-13 22:07:11 -0700
+
+
+Started GET "/assets/cats.js?body=1" for 127.0.0.1 at 2015-05-13 22:07:11 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-05-13 22:07:11 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-05-13 22:07:11 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-13 22:07:11 -0700
+
+
+Started GET "/cats/1/edit" for 127.0.0.1 at 2015-05-13 22:09:17 -0700
+Processing by CatsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCat Load (0.5ms)[0m  [1mSELECT  "cats".* FROM "cats"  WHERE "cats"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/cats/1
+Filter chain halted as :verify_owner rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/cats/1" for 127.0.0.1 at 2015-05-13 22:09:17 -0700
+Processing by CatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCat Load (0.6ms)[0m  SELECT  "cats".* FROM "cats"  WHERE "cats"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCatRentalRequest Load (0.6ms)[0m  [1mSELECT "cat_rental_requests".* FROM "cat_rental_requests"  WHERE "cat_rental_requests"."cat_id" = $1  ORDER BY start_date[0m  [["cat_id", 1]]
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered cats/_req_tr.html.erb (2.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered cats/_req_tr.html.erb (1.1ms)
+  Rendered cats/show.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 99ms (Views: 95.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-13 22:09:17 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-13 22:09:17 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-13 22:09:17 -0700
+
+
+Started GET "/assets/cat_rental_requests.js?body=1" for 127.0.0.1 at 2015-05-13 22:09:17 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-13 22:09:17 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-05-13 22:09:17 -0700
+
+
+Started GET "/assets/cats.js?body=1" for 127.0.0.1 at 2015-05-13 22:09:17 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-13 22:09:17 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-05-13 22:09:17 -0700
+
+
+Started GET "/assets/cat_rental_requests.css?body=1" for 127.0.0.1 at 2015-05-13 22:09:17 -0700
+
+
+Started GET "/assets/cats.css?body=1" for 127.0.0.1 at 2015-05-13 22:09:17 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-05-13 22:09:17 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-05-13 22:09:17 -0700
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-05-13 22:09:26 -0700
+Processing by SessionsController#new as HTML
+  Rendered layouts/_form.html.erb (0.1ms)
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 72ms (Views: 69.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-13 22:09:26 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-13 22:09:26 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-13 22:09:26 -0700
+
+
+Started GET "/assets/cat_rental_requests.js?body=1" for 127.0.0.1 at 2015-05-13 22:09:26 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-05-13 22:09:26 -0700
+
+
+Started GET "/assets/cats.js?body=1" for 127.0.0.1 at 2015-05-13 22:09:26 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-05-13 22:09:26 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-13 22:09:26 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-13 22:12:58 -0700
+
+
+Started GET "/cats" for 127.0.0.1 at 2015-05-13 22:12:58 -0700
+Processing by CatsController#index as HTML
+  [1m[35mCat Load (0.5ms)[0m  SELECT "cats".* FROM "cats"
+  Rendered cats/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 83ms (Views: 81.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/cat_rental_requests.css?body=1" for 127.0.0.1 at 2015-05-13 22:12:58 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-05-13 22:12:59 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-13 22:12:59 -0700
+
+
+Started GET "/assets/cats.css?body=1" for 127.0.0.1 at 2015-05-13 22:12:59 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-05-13 22:12:59 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-13 22:12:59 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-13 22:12:59 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-13 22:12:59 -0700
+
+
+Started GET "/assets/cat_rental_requests.js?body=1" for 127.0.0.1 at 2015-05-13 22:12:59 -0700
+
+
+Started GET "/assets/cats.js?body=1" for 127.0.0.1 at 2015-05-13 22:12:59 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-05-13 22:12:59 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-05-13 22:12:59 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-13 22:12:59 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-14 08:17:18 -0700
+
+
+Started GET "/cats" for 127.0.0.1 at 2015-05-14 08:17:18 -0700
+Processing by CatsController#index as HTML
+  [1m[36mCat Load (0.5ms)[0m  [1mSELECT "cats".* FROM "cats"[0m
+  Rendered cats/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 66ms (Views: 64.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/cats.css?body=1" for 127.0.0.1 at 2015-05-14 08:17:18 -0700
+
+
+Started GET "/assets/cat_rental_requests.css?body=1" for 127.0.0.1 at 2015-05-14 08:17:18 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-05-14 08:17:18 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-14 08:17:18 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-05-14 08:17:18 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-14 08:17:18 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-14 08:17:18 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-14 08:17:18 -0700
+
+
+Started GET "/assets/cat_rental_requests.js?body=1" for 127.0.0.1 at 2015-05-14 08:17:18 -0700
+
+
+Started GET "/assets/cats.js?body=1" for 127.0.0.1 at 2015-05-14 08:17:18 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-05-14 08:17:18 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-05-14 08:17:18 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-14 08:17:18 -0700
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-05-14 08:19:04 -0700
+Processing by SessionsController#new as HTML
+  Rendered layouts/_form.html.erb (0.1ms)
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 80ms (Views: 79.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/cat_rental_requests.css?body=1" for 127.0.0.1 at 2015-05-14 08:19:04 -0700
+
+
+Started GET "/assets/cats.css?body=1" for 127.0.0.1 at 2015-05-14 08:19:04 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-05-14 08:19:04 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-05-14 08:19:04 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-14 08:19:04 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-14 08:19:04 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-14 08:19:04 -0700
+
+
+Started GET "/assets/cat_rental_requests.js?body=1" for 127.0.0.1 at 2015-05-14 08:19:04 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-14 08:19:04 -0700
+
+
+Started GET "/assets/cats.js?body=1" for 127.0.0.1 at 2015-05-14 08:19:04 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-05-14 08:19:04 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-05-14 08:19:04 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-14 08:19:04 -0700
+
+
+Started GET "/assets/cat_rental_requests.css?body=1" for 127.0.0.1 at 2015-05-14 08:19:16 -0700
+
+
+Started GET "/assets/cats.css?body=1" for 127.0.0.1 at 2015-05-14 08:19:16 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-05-14 08:19:16 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-14 08:19:16 -0700
+
+
+Started GET "/cats" for 127.0.0.1 at 2015-05-14 08:19:16 -0700
+Processing by CatsController#index as HTML
+  [1m[35mCat Load (0.5ms)[0m  SELECT "cats".* FROM "cats"
+  Rendered cats/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 64ms (Views: 63.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-05-14 08:19:16 -0700
+
+
+Started GET "/assets/cat_rental_requests.css?body=1" for 127.0.0.1 at 2015-05-14 08:19:16 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-05-14 08:19:16 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-14 08:19:16 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-14 08:19:16 -0700
+
+
+Started GET "/assets/cats.css?body=1" for 127.0.0.1 at 2015-05-14 08:19:16 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-14 08:19:16 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-14 08:19:16 -0700
+
+
+Started GET "/assets/cat_rental_requests.js?body=1" for 127.0.0.1 at 2015-05-14 08:19:16 -0700
+
+
+Started GET "/assets/cats.js?body=1" for 127.0.0.1 at 2015-05-14 08:19:16 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-05-14 08:19:16 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-05-14 08:19:16 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-14 08:19:16 -0700
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-05-14 08:19:27 -0700
+Processing by SessionsController#new as HTML
+  Rendered layouts/_form.html.erb (0.2ms)
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 71ms (Views: 70.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/cat_rental_requests.css?body=1" for 127.0.0.1 at 2015-05-14 08:19:27 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-05-14 08:19:27 -0700
+
+
+Started GET "/assets/cats.css?body=1" for 127.0.0.1 at 2015-05-14 08:19:27 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-05-14 08:19:27 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-14 08:19:27 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-14 08:19:27 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-14 08:19:27 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-14 08:19:27 -0700
+
+
+Started GET "/assets/cat_rental_requests.js?body=1" for 127.0.0.1 at 2015-05-14 08:19:27 -0700
+
+
+Started GET "/assets/cats.js?body=1" for 127.0.0.1 at 2015-05-14 08:19:27 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-05-14 08:19:27 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-05-14 08:19:27 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-14 08:19:27 -0700
+
+
+Started POST "/session" for 127.0.0.1 at 2015-05-14 08:19:31 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"L4eAa+f7ryaBWuXgHdgORtPOEzk7rXWB7GkUSpu/PP8=", "user"=>{"user_name"=>"Velina", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."user_name" = 'Velina' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE ("users"."user_name" = 'Velina' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = 1  [["session_token", "jEP4rrsLk9JA8YARviP2ww"], ["updated_at", "2015-05-14 15:19:31.472268"]]
+  [1m[36m (47.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/cats
+Completed 302 Found in 126ms (ActiveRecord: 50.1ms)
+
+
+Started GET "/cats" for 127.0.0.1 at 2015-05-14 08:19:31 -0700
+Processing by CatsController#index as HTML
+  [1m[35mCat Load (0.5ms)[0m  SELECT "cats".* FROM "cats"
+  Rendered cats/index.html.erb within layouts/application (2.1ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."session_token" = 'jEP4rrsLk9JA8YARviP2ww' LIMIT 1[0m
+Completed 200 OK in 83ms (Views: 80.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/cats.css?body=1" for 127.0.0.1 at 2015-05-14 08:19:31 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-05-14 08:19:31 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-05-14 08:19:31 -0700
+
+
+Started GET "/assets/cat_rental_requests.css?body=1" for 127.0.0.1 at 2015-05-14 08:19:31 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-05-14 08:19:31 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-05-14 08:19:31 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-05-14 08:19:31 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-05-14 08:19:31 -0700
+
+
+Started GET "/assets/cat_rental_requests.js?body=1" for 127.0.0.1 at 2015-05-14 08:19:31 -0700
+
+
+Started GET "/assets/cats.js?body=1" for 127.0.0.1 at 2015-05-14 08:19:31 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-05-14 08:19:31 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-05-14 08:19:31 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-05-14 08:19:31 -0700
