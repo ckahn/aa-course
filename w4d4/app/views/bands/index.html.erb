@@ -1,0 +1,18 @@
+<% unless flash[:notice].nil? %>
+<p><%= flash[:notice] %></p>
+<% end %>
+
+<% if @bands.empty? %>
+
+<h1>There are no bands.</h1>
+
+<% else %>
+
+<h1>All the Bands!</h1>
+<ul>
+  <% @bands.each do |band| %>
+  <li><%= link_to band.name, band_url(band) %></li>
+  <% end %>
+</ul>
+
+<% end %>

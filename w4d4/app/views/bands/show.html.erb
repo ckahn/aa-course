@@ -1,0 +1,21 @@
+<% unless flash[:notice].nil? %>
+<p><%= flash[:notice] %></p>
+<% end %>
+
+<h1><%= @band.name %>'s page</h1>
+
+<% if @band.albums.size > 0 %>
+  <h2>Albums</h2>
+  <ul>
+    <% @band.albums.each do |album| %>
+    <li><%= link_to album.name, album_url(album) %></li>
+    <% end %>
+  </ul>
+<% else %>
+  <h2>No albums have been entered for this band.</h2>
+<% end %>
+
+<%= button_to "Add album", new_band_album_url(@band), method: :get %>
+<%= button_to "Edit name", edit_band_url(@band), method: :get %>
+<%= button_to "Delete band", band_url(@band), method: :delete %><br>
+<%= link_to "View all bands", bands_url %>

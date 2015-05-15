@@ -1,0 +1,25 @@
+<h1>Add a new album to <%= @band.name %></h1>
+
+<% unless flash[:errors].nil? || flash[:errors].empty? %>
+  <ul>
+    <% flash[:errors].each do |error| %>
+      <li><%= error %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<form action="<%= albums_url %>" method="POST">
+  <%= csrf_protection %>
+  <input type="hidden" name="album[band_id]" value="<%= @band.id %>">
+  <label>Name
+    <input type="string" name="album[name]" value="<%= @album.name %>">
+  </label>
+  <br>
+  <input type="radio" name="album[live]" id="album_live_false"
+   checked="true" value="false">
+  <label for="album_live_false">Studio recording</label>
+  <input type="radio" name="album[live]" id="album_live_true" value="true">
+  <label for="album_live_true">Live recording</label>
+  <br>
+  <input type="submit" value="Add">
+</form>

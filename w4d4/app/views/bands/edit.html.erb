@@ -1,0 +1,18 @@
+<h1>Edit <%= @band.name %></h1>
+
+<% unless flash[:errors].nil? || flash[:errors].empty? %>
+  <ul>
+    <% flash[:errors].each do |error| %>
+      <li><%= error %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<form action="<%= band_url(@band) %>", method="POST">
+  <%= csrf_protection %>
+  <input type="hidden" name="_method" value="PATCH">
+  <label>Name
+    <input type="string" name="band[name]" value="<%= @band.name %>">
+  </label>
+  <input type="submit" value="Change">
+</form>

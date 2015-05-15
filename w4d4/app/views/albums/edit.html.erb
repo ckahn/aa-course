@@ -1,0 +1,27 @@
+<h1>Edit album for <%= @band.name %></h1>
+
+<% unless flash[:errors].nil? || flash[:errors].empty? %>
+  <ul>
+    <% flash[:errors].each do |error| %>
+      <li><%= error %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<form action="<%= album_url(@album) %>" method="POST">
+  <%= csrf_protection %>
+  <input type="hidden" name="_method" value="PATCH">
+  <input type="hidden" name="album[band_id]" value="<%= @band.id %>">
+  <label>Name
+    <input type="string" name="album[name]" value="<%= @album.name %>">
+  </label>
+  <br>
+  <input type="radio" name="album[live]" id="album_live_false"
+   checked="<%= @album.live ? "true" : "false"%>" value="false">
+  <label for="album_live_false">Studio recording</label>
+  <input type="radio" name="album[live]" id="album_live_true"
+  checked="<%= @album.live ? "true" : "false"%>" value="true">
+  <label for="album_live_true">Live recording</label>
+  <br>
+  <input type="submit" value="Update">
+</form>

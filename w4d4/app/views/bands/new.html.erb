@@ -1,0 +1,17 @@
+<h1>Create a new band</h1>
+
+<% unless flash[:errors].nil? || flash[:errors].empty? %>
+  <ul>
+    <% flash[:errors].each do |error| %>
+      <li><%= error %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<form action="<%= bands_url %>", method="POST">
+  <%= csrf_protection %>
+  <label>Name
+    <input type="string" name="band[name]" value="<%= @band.name %>">
+  </label>
+  <input type="submit" value="Create">
+</form>
