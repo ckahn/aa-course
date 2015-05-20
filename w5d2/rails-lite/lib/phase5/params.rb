@@ -10,7 +10,13 @@ module Phase5
     # You haven't done routing yet; but assume route params will be
     # passed in as a hash to `Params.new` as below:
     def initialize(req, route_params = {})
-      @params = parse_www_encoded_form(req.query_string)
+      @params = {}
+      unless req.query_string.nil?
+        @params.merge!(parse_www_encoded_form(req.query_string))
+      end
+      unless req.body.nil?
+        @params.merge!(parse_www_encoded_form(req.body))
+      end
       @params.merge!(route_params)
     end
 
@@ -44,6 +50,12 @@ module Phase5
       params
     end
 
+    # this should return an array
+    # user[address][street] should return ['user', 'address', 'street']
+    def parse_key(key)
+      key.split(/\]\[|\[|\]/)
+    end
+
     # this should return deeply nested hash
     # argument format
     # user[address][street]=main&user[address][zip]=89436
@@ -55,12 +67,6 @@ module Phase5
         [parse_key(pair.first), pair.last]
       end
       build_params(data)
-    end
-
-    # this should return an array
-    # user[address][street] should return ['user', 'address', 'street']
-    def parse_key(key)
-      key.split(/\]\[|\[|\]/)
     end
   end
 end
