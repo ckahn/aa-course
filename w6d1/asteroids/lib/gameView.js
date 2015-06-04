@@ -24,9 +24,6 @@
     key("i", function(){shp.power([0,-3]);});
     key("j", function(){shp.power([-3,0]);});
     key("l", function(){shp.power([3,0]);});
-    //key("k", this.game.ship.power([0, -1]));
-    //key("h", this.game.ship.power([-1, 0]));
-    //key("l", this.game.ship.power([1, 0]));
   };
 
 })();
