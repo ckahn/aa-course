@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="../jquery-1.11.3.min.js"></script>
+    <script src="./tabs.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.17.2/build/cssreset/cssreset-min.css">
+    <link href="./tabs.css" rel="stylesheet" type="text/css">
+
+
+    <title>My Cool Website</title>
+  </head>
+
+  <body>
+    <ul class='tabs' data-content-tabs="#content-tabs">
+      <li><a href="#hairless-terrier">Hairless Terrier</a></li>
+      <li><a href="#shih-tzu">Shih Tzu</a></li>
+      <li><a href="#american-eskimo">American Eskimo</a></li>
+    </ul>
+
+    <div id="content-tabs">
+      <div class="tab-pane" id="hairless-terrier">
+        <p>The American Hairless Terrier is an alert, loving, energetic, happy, playful, loyal, and cuddly dog. He loves to warm himself in your lap, or snuggle with you under the blankets. He is very affectionate and dependent on his family, and can only be a house pet. Yet he's also an active, spirited and protective dog who can be fearless in his devotion to you. He makes a good watchdog with his keen nose for intruders and his readiness to protect his territory and family. He can bark too much and be yappy at times, and needs to be a reassured that a visitor is not a threat. He would much rather approach strangers slowly and grow used to them rather than being grabbed and picked up by them. He can learn to be friendly to visitors if he is given chances to become accustomed to them while he's still a puppy. He is a trainable dog who is eager to please you, but he can also be stubborn and independent at times. A bundle of energy, he is active indoors but needs daily outdoor exercise, and enjoys long walks, hikes or jogs. He likes challenging games that allow him to use his mind, and loves to chase balls and to jump. If you don't give him enough to do, he may bark and dig. He loves to dig! When outdoors he should always be on a leash or in a safely enclosed area, as he will chase small animals and birds. He is good with dogs and cats as long as they are family pets and he is raised with them from puppyhood, but he isn't trustworthy with smaller pets and birds, and with dogs he doesn't know. He is good with responsible and experienced children who are old enough not to be rough with him, and makes a wonderful playmate for them. He knows how to adjust his energy, and can be very gentle and loving. He is generally a very healthy dog, but you must protect him with a warm sweater during winter and from sunburn and heat during hotter months. He sweats when he is hot or scared. He is not a good swimmer, and must be carefully monitored around water. He does not shed, and so makes a wonderful pet if you like your home neat and tidy.</p>
+      </div>
+      <div class="tab-pane" id="shih-tzu">
+        <p>The Shih Tzu is a loving, friendly, gentle, playful, loyal and happy dog. He loves people and bonds with the entire family. He needs to give and receive a great deal of love and affection, and is not the kind of dog who can be left alone inside the house for many hours at a time, or kept outside in a yard. He is an indoor dog who needs to be petted, held, cuddled and pampered, and he is happiest napping on the couch with you for hours. Although he is generally a docile, quiet lapdog, he can also be lively, energetic, independent and spunky. He's an outgoing and fun companion who loves to roll and play on the carpet with his squeaky toys, or romp outdoors in a safely enclosed area. He needs minimal exercise, but he does enjoy a daily, leashed walk. He loves to go everywhere with you, and even traveling in the car, but he shouldn't travel or be outside in the heat, as he is very sensitive to warm temperatures. He is a sweet, rarely aggressive dog who gets along well with strangers and other pets and makes friends wherever he visits. He does very well with considerate, older children, but he may be jealous, snappish, or fearful of younger, rougher toddlers. He is an excellent watchdog since he barks very loudly at strange noises and people--but then will quickly make friends if you accept the newcomer. He is not an easy dog to train and is difficult to housebreak. He is so gentle he doesn't need a great deal of training, but he can be proud and stubborn, and does not respond well to harsh methods. You will need to be very patient and consistent to train him. While he needs plenty of attention, you must also be careful not to spoil him, or he will grow jealous. You must be careful not to overfeed him, as he can easily become overweight. He may snort, sneeze, and wheeze, and with his flat face can sometimes injure his eyes. He is a very low shedder, so he is a good pet if you don't want dog-hair in the home.</p>
+      </div>
+      <div class="tab-pane" id="american-eskimo">
+        <p>Intelligent, alert, friendly, and eager to please, the Toy American Eskimo loves to be in your company and doesn't do well without lots of love and attention. Lack of stimulation or human company will often cause him to lapse into bad behaviors, like barking, digging, or chewing. He has lots of energy and will need to be walked at least a few times per week. He is agile and athletic and loves to play games. He can be a bit yappy at times, but he's also an excellent watchdog and will bark to announce the presence of a stranger on his turf. He is one of the fastest learning breeds, so training him is easy. He is also great at learning tricks and has often been used as a circus dog. He's protective of his family and it usually takes him a little while to warm up to strangers. He gets along great with children. He is a very high shedder. You'll find a lot of hair on everything in your home; you'll be vacuuming the sofa and floor frequently!</p>
+      </div>
+    </div>
+
+    <script>
+      $(function() {
+        $('.tabs').tabs();
+      })
+    </script>
+  </body>
+</html>
