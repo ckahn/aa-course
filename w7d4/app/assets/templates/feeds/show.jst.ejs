@@ -1,0 +1,14 @@
+<h1><%= feed.escape('title') %></h1>
+
+<p>Link:
+  <a href="<%= feed.escape('url') %>">
+    <%= feed.escape('url') %>
+  </a>
+</p>
+
+<p>Created at: <%= feed.escape('created_at') %></p>
+<button class="refresh-feed">Refresh</button>
+
+<ul class="show-item-list">
+
+</ul>
